@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="p-10 w-full h-screen bg-zinc-900">
+      <form class="flex flex-wrap gap-5">
+        <input
+          type="text"
+          placeholder="Title goes here..."
+          class="w-full h-12 text-white text-lg bg-zinc-800 rounded p-5"
+        />
+        <textarea
+          placeholder="Write your task details here..."
+          class="w-full h-40 text-white text-lg bg-zinc-800 rounded p-5 resize-none"
+        ></textarea>
+        <button class="bg-blue-500 text-white h-9 w-auto px-4 text-md rounded">
+          Create Task
+        </button>
+      </form>
+
+      <div class="flex gap-10 mt-10 flex-wrap">
+        <div class="task w-72 bg-zinc-800 p-3 rounded">
+          <h1 class="text-white text-2xl tracking-tighter">
+            Some Task goes here.
+          </h1>
+          <a href="#" class="text-blue-500">Read More</a>
+        </div>
+
+        <div class="task w-72 bg-zinc-800 p-3 rounded">
+          <h1 class="text-white text-2xl tracking-tighter">
+            Some Task goes here.
+          </h1>
+          <a href="#" class="text-blue-500">Read More</a>
+        </div>
+
+        <div class="task w-72 bg-zinc-800 p-3 rounded">
+          <h1 class="text-white text-2xl tracking-tighter">
+            Some Task goes here.
+          </h1>
+          <a href="#" class="text-blue-500">Read More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
